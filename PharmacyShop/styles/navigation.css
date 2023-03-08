@@ -1,13 +1,15 @@
       /* The navigation menu */
       .navbar {
         overflow: hidden;
-        background-color: #333;
+        background-color:darkgoldenrod;
+      
       }
       
       /* Navigation links */
       .navbar a {
         float: left;
-        font-size: 16px;
+        font-size: larger;
+        font-weight: bold;
         color: white;
         text-align: center;
         padding: 14px 16px;
@@ -16,16 +18,20 @@
       
       /* The subnavigation menu */
       .subnav {
-        float: left;
-        overflow: hidden;
+        float:left;
+        list-style-type: none;
+        list-style-position:left;
+        overflow:hidden;
+        display: block;
       }
       
       /* Subnav button */
       .subnav .subnavbtn {
-        font-size: 16px;
+        font-size:larger;
+        font-weight: bold;
         border: none;
         outline: none;
-        color: white;
+        color:white;
         padding: 14px 16px;
         background-color: inherit;
         font-family: inherit;
@@ -34,34 +40,35 @@
       
       /* Add a red background color to navigation links on hover */
       .navbar a:hover, .subnav:hover .subnavbtn {
-        background-color: red;
+        background-color:black;
       }
       
       /* Style the subnav content - positioned absolute */
       .subnav-content {
         display: none;
         position: absolute;
-        left: 0;
-        background-color: red;
-        width: 100%;
+        background-color:whitesmoke;
+        width: inherit;
         z-index: 1;
       }
       
       /* Style the subnav links */
       .subnav-content a {
-        float: left;
-        color: white;
-        text-decoration: none;
+        float:left;
+        nav-left:current;
+        color:goldenrod;
+        text-decoration:none;
       }
       
       /* Add a grey background color on hover */
       .subnav-content a:hover {
-        background-color: #eee;
-        color: black;
+        background-color:darkgoldenrod;
+        color:darkblue;
+        font-size: larger;
       }
       
       /* When you move the mouse over the subnav container, open the subnav content */
       .subnav:hover .subnav-content {
-        display: block;
+        display:grid;
       }
       
