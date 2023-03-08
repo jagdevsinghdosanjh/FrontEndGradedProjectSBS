@@ -2,9 +2,12 @@
       .navbar {
         overflow: hidden;
         background-color:darkgoldenrod;
+        position:fixed;
+        top: 55px;
+        width: 100%;
       
       }
-      
+    
       /* Navigation links */
       .navbar a {
         float: left;
@@ -24,12 +27,12 @@
         overflow:hidden;
         display: block;
       }
-      
+
       /* Subnav button */
       .subnav .subnavbtn {
         font-size:larger;
         font-weight: bold;
-        border: none;
+        border:none;
         outline: none;
         color:white;
         padding: 14px 16px;
@@ -37,8 +40,8 @@
         font-family: inherit;
         margin: 0;
       }
-      
-      /* Add a red background color to navigation links on hover */
+                  
+      /* Add a black background color to navigation links on hover */
       .navbar a:hover, .subnav:hover .subnavbtn {
         background-color:black;
       }
