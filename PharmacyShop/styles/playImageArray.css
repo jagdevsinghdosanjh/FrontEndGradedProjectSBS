@@ -1,0 +1,11 @@
+img{
+    background-position-x: center;
+    width:1220px;
+    height: 480px;
+}
+#previousbtn{
+    right: 0;;
+}
+#nextbtn{
+    left: 0;
+}
