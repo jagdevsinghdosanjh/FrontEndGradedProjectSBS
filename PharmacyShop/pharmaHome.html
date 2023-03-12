@@ -1,44 +1,68 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Pharmacy</title>
-        <link rel="stylesheet" href="/styles/home.css" />
-        <link rel="stylesheet" href="/styles/navigation.css" />
-        <link rel="stylesheet" href="/styles/playImageArray.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style src="/javascript/imageArray.js"></style>
-  </head>
- <body>
-        <header>Pharmacy</header>
-        
-    <!-- The navigation menu -->
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <div class="subnav">
-        <button class="subnavbtn">Our Medicines <i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <a href="#fever">Fever</a>
-          <a href="#musclepain">Muscle Pain</a>
-          <a href="#Coughandcold">Cough & Cold</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">Health Care<i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <a href="#babycar">Baby Care</a>
-          <a href="#skincare">Skin Care</a>
-          <a href="#homecare">Home Care</a>
-          <a href="#personalcare">Personal Care</a>
-          <a href="#petcare">Pet Care</a>
-        </div>
-      </div>
-      <div class="subnav">
-        <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <a href="#link1">Link 1</a>
-        </div>
-      </div>
-      </div>
-        <h2>Welcome to Pharmacy-Home</h2>
-        <footer>@Copywrite-For Demonstration purpose only.</footer>
-      </body>
+    <link rel="stylesheet" href="styles/headerfooter.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .slides { width: 100%;}
+      .slides-hidden { display: none ; }
+      .slides { border:2px solid steelblue; }
+    </style>
+    <script>
+      addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+          var index = 0;
+          const slides = document.querySelectorAll(".slides");
+          const classHide = "slides-hidden", count = slides.length;
+          nextSlide();
+          function nextSlide() {
+              slides[(index ++) % count].classList.add(classHide);
+              slides[index % count].classList.remove(classHide);
+              setTimeout(nextSlide, 3000);
+          }
+      });
+    </script>
+</head>
+<body>
+    <header>Pharmacy</header>
+    
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Our Medicines <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#fever">Fever</a>
+      <a href="#musclepain">Muscle Pain</a>
+      <a href="#Coughandcold">Cough & Cold</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Health Care<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#babycare">Baby Care</a>
+      <a href="#skincare">Skin Care</a>
+      <a href="#homecar">Home Care</a>
+      <a href="#personalcar">Personal Care</a>
+      <a href="#petcare">Pet Care</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Lab Test <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <!-- <a href="#link1">Provision for Links(if any)</a> -->
+    </div>
+  </div>
+</div>
+<!-- Slide Show -->
+ <img class="slides" src="/images/Animation/ani1.jpg" height="20%">
+  <img class="slides" src="/images/Animation/ani2.jpg"height="20%">
+  <img class="slides" src="/images/Animation/ani3.jpg"height="20%">
+  <img class="slides" src="/images/Animation/ani4.jpg"height="20%">
+  <img class="slides" src="/images/Animation/ani5.jpg"height="20%">
+
+    
+    <footer>@Copywrite - Only for demonstration.</footer>
+  </body>
 </html>
