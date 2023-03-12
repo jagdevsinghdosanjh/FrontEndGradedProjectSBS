@@ -14,7 +14,7 @@ i.	When Hovered on this, show a dropdown list of links for Baby Care, Skin Care,
 d.	Lab Test
 i.	When Clicked on Lab Test, Open a form to book the slot.
 e.	When the web page is scrolled, make sure that the navigation bar is still seen on the top of the web page.
-(Look at the below images for your reference.)
+
    
 
 3.	First thing in the web page is to show offers or some information in the form of images.
