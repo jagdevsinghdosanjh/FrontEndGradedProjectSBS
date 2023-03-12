@@ -1,0 +1,27 @@
+body {
+  background-color:blanchedalmond;
+}
+header {
+  background-color:black ;
+  color:yellow;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+}
+
+footer {
+  background-color: black;
+  color: rgb(255, 255, 0);
+  font-size: x-small;
+  text-align: center;
+  padding: 10px;
+}
+p{
+  background-color: aquamarine;
+  border-color: burlywood;
+  border:2px solid green;
+}
