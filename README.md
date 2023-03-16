@@ -1,4 +1,4 @@
-# FrontEndGrededProjectSBS
+# FrontEndGradedProjectSBS
 
 Graded Project
 Problem Statement: 
